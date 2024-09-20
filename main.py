@@ -7,7 +7,8 @@ from torch.nn import CrossEntropyLoss
 from torch.optim import SGD
 
 from avalanche.benchmarks import nc_benchmark
-from avalanche.training.strategies import Naive
+# from avalanche.training.strategies import Naive
+from avalanche.training.supervised import Naive
 from avalanche.training.plugins.replay import ReplayPlugin,\
     ClassBalancedStoragePolicy, RandomExemplarsSelectionStrategy
 from avalanche.training.plugins import EvaluationPlugin
