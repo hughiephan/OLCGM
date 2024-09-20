@@ -10,7 +10,9 @@ from avalanche.benchmarks import nc_benchmark
 # from avalanche.training.strategies import Naive
 from avalanche.training.supervised import Naive
 # from avalanche.training.plugins.replay import ReplayPlugin, ClassBalancedStoragePolicy, RandomExemplarsSelectionStrategy
-from avalanche.training.plugins.replay import ReplayPlugin, RandomExemplarsSelectionStrategy 
+from avalanche.training.plugins.replay import ReplayPlugin
+from avalanche.training.storage_policy import RandomExemplarsSelectionStrategy 
+
 from avalanche.training.plugins import EvaluationPlugin
 from avalanche.evaluation.metrics import ExperienceAccuracy, StreamAccuracy,\
     ExperienceForgetting, StreamForgetting, MinibatchLoss
